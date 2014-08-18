@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/billAmtEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="end|center_vertical"
+        android:hint="@string/bill_amount"
+        android:inputType="number|numberSigned|numberDecimal" >
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/calcTipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/billAmtEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="@string/calculate_tip" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/billAmtEditText"
+        android:layout_below="@id/calcTipButton"
+        android:layout_marginTop="18dp"
+        android:text="@string/tip_percentage"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/tipPctTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/billAmtEditText"
+        android:layout_below="@id/calcTipButton"
+        android:layout_marginTop="18dp"
+        android:text="@string/tip"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/billAmtEditText"
+        android:layout_below="@id/TextView01"
+        android:layout_marginTop="18dp"
+        android:text="@string/tip_amount"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/tipAmtTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/billAmtEditText"
+        android:layout_below="@id/TextView01"
+        android:layout_marginTop="18dp"
+        android:text="@string/value"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/billAmtEditText"
+        android:layout_below="@id/TextView02"
+        android:layout_marginTop="18dp"
+        android:text="@string/total_amount"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/totalAmtTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/billAmtEditText"
+        android:layout_below="@id/TextView02"
+        android:layout_marginTop="18dp"
+        android:text="@string/value"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/billAmtEditText"
+        android:layout_below="@id/TextView03"
+        android:layout_marginTop="18dp"
+        android:text="@string/jni_elapsed_time"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/jniElapsedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/billAmtEditText"
+        android:layout_below="@id/TextView03"
+        android:layout_marginTop="18dp"
+        android:text="@string/value"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/billAmtEditText"
+        android:layout_below="@id/TextView04"
+        android:layout_marginTop="18dp"
+        android:text="@string/java_elapsed_time"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/javaElapsedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/billAmtEditText"
+        android:layout_below="@id/TextView04"
+        android:layout_marginTop="18dp"
+        android:text="@string/value"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+</RelativeLayout>
